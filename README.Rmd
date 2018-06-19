@@ -1,0 +1,61 @@
+---
+title: 'metaweighter: README'
+author: "Russell Hyde"
+date: "19 June 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Weighted Gene-Level Meta-Analysis
+
+<!-- Don't use 'integrating' since integrative is emotive for biologists
+     -->
+<!-- Don't use 'aggregating' to describe the process of combining results since
+     we refer to aggregate statistics (from an individual dataset)
+     -->
+
+Meta-analysis is a powerful tool for combining scientific results across
+multiple studies. For example, through meta-analysis of several, related,
+gene-expression studies we can gain greater confidence in the association (or
+response) of a gene with an experimental treatment or disease-state.
+
+Several `R` packages already exist for performing meta-analysis, either on the
+summary statistics from published experiments (effect-sizes, p-values,
+z-scores; aggregate-level meta-analysis) or through re-analysis of the original
+datasets (individual-level meta-analysis).
+
+[List some example R packages; biased towards gene-expression tools]
+
+[Use of aggregated-data vs individual-level data: Is there much benefit in the
+latter?]
+
+[Limited applicability of some meta-analysis approaches for gene-expression
+studies or for complicated experimental designs: how to deal with
+cross-platform effects, gene-missingness, low-quality datasets]
+
+## Standard approaches to meta-analysis of aggregated-data
+
+### Fixed-effect meta-analysis
+
+### Random-effects meta-analysis
+
+## Gene-expression-specific methods for individual-level data
+
+### Dataset merging
+
+### Hierarchical modelling
+
+## Selection of weights for meta-analysis
+
+### General weights
+
+### Inverse-variance weighting
+
+### Extensions? [Weighting by reproducibility]
+
+## The package `metaweighter`
+
+<!-- END -->
