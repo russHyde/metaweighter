@@ -36,11 +36,47 @@ latter?]
 studies or for complicated experimental designs: how to deal with
 cross-platform effects, gene-missingness, low-quality datasets]
 
+----
+
 ## Standard approaches to meta-analysis of aggregated-data
 
-### Fixed-effect meta-analysis
+An aim of meta-analysis is to construct a summary estimate for some
+quantitative characteristic / parameter by combining information from multiple
+studies. By combining studies, we can effectively increase the sample-size over
+which the characteristic can be estimated - hopefully increasing the accuracy
+of that estimate. The simplest study-summarisation methods work by taking a
+weighted sum over the estimates from each dataset.
 
-### Random-effects meta-analysis
+### Effect-size combination methods
+
+In both fixed-effect and random-effects meta-analysis a weighted-mean of the
+parameter estimates is constructed - for example, if the effect of some
+experimental treatment on some outcome is assessed in multiple studies, the
+summary of the experimental-effect is estimated by a weighted average of the
+estimated experimental-effect in each study. Variance estimates from each study
+are combined in a similar manner to generate an overall variance estimate -
+although the precise method for combining variances depends on assumptions
+about how comparable the available studies are.
+
+In **fixed-effect** meta-analysis, it is assumed that the observable
+experimental-effect should be identical in the different study populations (and
+that technical or other experimental constraints within the studies would not
+affect the ability to estimate the effect-size). In **random-effects**
+meta-analysis, a degree of heterogeneity in the estimable effect-size is
+anticipated between the different studies / study populations, and so the model
+assumes that the effect-size for a given dataset is a sample from some
+probability distribution. The properties of this _effect-size probability
+distribution_ are of interest in random-effects meta-analysis.
+
+#### Fixed-effects
+
+#### Random-effects
+
+### _p_-value combination methods
+
+### Intersection methods
+
+----
 
 ## Gene-expression-specific methods for individual-level data
 
